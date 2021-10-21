@@ -1,0 +1,11 @@
+-----In-class 3-----------------------------------------------------------------
+Author: Ryan Park
+Date: 2021-10-07
+Issues I could not resolve:
+- There is a gap between the navbar and the hello world <div> that I have not
+ figured out how to remove. This issue can actually be expanded upon, I could 
+ not get the padding and margin utilities to apply. I added padding such as 
+ 'p-1' as a class with no effect.
+- I could not figure out how to style the "New" Label. I was able to change the
+background color, but was unable to apply padding or border radius to round the
+corners.
