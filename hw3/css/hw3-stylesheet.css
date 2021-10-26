@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+/* body {
+    background-image: linear-gradient( rgba(255,0,0,0) 25%, rgb(162, 162, 162));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    
+} */
+
+body.container {
+    width: 80%;
+}
+
+#error-block {
+    color: #ff3d3d;
+    font-weight: bold;
+}
+
+body #build-table-btn{
+    margin-top: 1rem;
+}
+
+body #multi-table {
+    background-color: white;
+    margin: auto;
+    max-height: 500px;
+}
+
+#table-div {
+    max-height: 500px;
+    border: 2pt solid gray;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+.tableFixHead {
+    overflow: auto;
+    height: 100px; 
+    width: 240px;
+}
+.tableFixHead thead th {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.tableFixHead thead th::after {
+    content: '';
+    position: absolute;
+    width: 105%;
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 1px solid black;
+}
+.tableFixHead tbody th {
+    text-align: center;
+    position: sticky;
+    left: 0;
+    background-color: white
+}
+.tableFixHead tbody th::after {
+    content: '';
+    position: absolute;
+    height: 105%;
+    width: 100%;
+    right: -1px;
+    top: -1px;
+    border-right: 1px solid black;
+}
+td {
+    text-align: center;
+}
+
+
+.form-group input:not(:placeholder-shown):invalid {
+    border: 2px solid #ff3d3d;
+    border-radius: 0.25rem;
+}
+.form-group input:focus:valid {
+    border: 3px solid #23DC3D;
+    border-radius: 0.25rem;
+}
+
+
+
