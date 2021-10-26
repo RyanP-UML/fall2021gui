@@ -1,3 +1,11 @@
+/* 
+    File: hw3-stylesheet.css
+    Date: 2021-10-26
+    Author: Ryan Park, ryan_park@student.uml.edu
+    Description: Style sheet fo rmultiplication table
+    Copyright (c) 2021 by Ryan Park. All rights reserved. 
+*/
+
 html {
     height: 100%;
 }
@@ -5,14 +13,6 @@ html {
 header {
     margin-bottom: 1rem;
 }
-
-/* body {
-    background-image: linear-gradient( rgba(255,0,0,0) 25%, rgb(162, 162, 162));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    
-} */
 
 body.container {
     width: 80%;

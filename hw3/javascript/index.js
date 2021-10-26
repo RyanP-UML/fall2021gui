@@ -1,7 +1,15 @@
 
+// File: index.js
+// Date: 2021-10-26
+// Author: Ryan Park, ryan_park@student.uml.edu
+// Description: This file contains all the javascript for multiplcation table
+// Copyright (c) 2021 by Ryan Park. All rights reserved.
+
+// code for build table button
 let build_table_btn = document.getElementById('build-table-btn');
 build_table_btn.addEventListener('click', build_table);
 
+// Code for reset button
 let reset_btn = document.getElementById('reset-btn')
 reset_btn.addEventListener('click', () => {
     if (!! document.getElementById('multi-table'))
@@ -18,17 +26,20 @@ function create_tableHead(scope, value) {
     return th_element;
 }
 
+// creates td element
 function create_tableData() { 
     var td_element = document.createElement('td');
     td_element.innerHTML = "error";
     return td_element;
 }
 
+// adds column to table
 function add_column(columnValue) {
     var column_target = document.getElementById('table-column-target');
     column_target.appendChild(create_tableHead('col', columnValue));
 }
 
+// adds row to table
 function add_row(rowValue) {
     var tr_element = document.createElement('tr');
     tr_element.appendChild(create_tableHead('row', rowValue));
@@ -102,7 +113,6 @@ function calculate_table() {
 
 }
 
-
 function build_table() {
     clearError();
 
@@ -110,8 +120,6 @@ function build_table() {
         clear_table();
 
     if (isValid_input()) {
-        
-
         let tableDiv = document.getElementById('table-div');
         tableDiv.removeAttribute('hidden');
         let table_element = create_table_element();
