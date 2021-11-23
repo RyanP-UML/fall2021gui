@@ -1,4 +1,3 @@
-
 // File: index.js
 // Date: 2021-10-26
 // Author: Ryan Park, ryan_park@student.uml.edu
