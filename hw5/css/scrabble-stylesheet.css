@@ -1,0 +1,133 @@
+/*
+    File: scrabble-stylesheet.css
+    Date: 2021-12-16
+    Author: Ryan Park, ryan_park@student.uml.edu
+    Description: Stylesheet for scrabble webpage
+    Copyright (c) 2021 by Ryan Park. All rights reserved.
+    Resources Used: https://www.tutorialspoint.com, https://www.geeksforgeeks.org
+*/
+html, body {
+    min-width: 990px;
+    width: auto !important;
+    width: 990px;
+}
+
+body {
+    background-image: url(../resources/cherry_wood.jpg);
+    background-size: cover;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#content-area {
+    margin: 30px auto;
+    background-image: url(../resources/red_felt.jpg);
+    background-size: cover;
+    height: 750px;
+    width: 90%;
+    border: solid 5px white;
+    border-radius: 3px;
+}
+
+#content-area h1 {
+    color: white;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 48px;
+}
+
+#scoreboard {
+    margin-bottom: 20px;
+}
+
+#scoreboard h3 {
+    display: inline;
+    margin: 0px 30px;
+    color: white;
+}
+
+#board {
+    background-color: black;
+    margin: auto;
+    margin-bottom: 100px;
+    width: fit-content;
+    height: 50px;
+}
+
+.board-drop-zone {
+    background-image: url(../resources/blank_space.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    border-right: none;
+    float: left;
+    width: 55px;
+    height: 60px;
+}
+
+.board-drop-zone:last-child {
+    border-right: 3px solid black;
+}
+
+.board-drop-zone:nth-child(1) {
+    background-image: url(../resources/doubleLetter_space.PNG);
+}
+.board-drop-zone:nth-child(6) {
+    background-image: url(../resources/doubleWord_space.PNG);
+}
+
+.board-drop-zone img {
+    max-width: 100%;
+    height: 60px;
+}
+
+#tile-holder {
+    background-image: url(../resources/scrabble-tile-holder-406774_640.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#player-tile-zone {
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+.tile {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+}
+
+#submission-zone {
+    margin-top: 30px;
+}
+#submission-zone button {
+    margin: 0px 20px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+#submit-word-btn {
+    background-color: #4CAF50;
+}
+
+#restart-btn {
+    background-color: #f44336;
+}

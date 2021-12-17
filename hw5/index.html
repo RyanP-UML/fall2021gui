@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- 
+    File: index.html
+    Date: 2021-12-16
+    Author: Ryan Park, ryan_park@student.uml.edu
+    Description: Main html file for scrabble webpage
+    Copyright (c) 2021 by Ryan Park. All rights reserved.
+    Resources Used: https://www.tutorialspoint.com, https://www.geeksforgeeks.org
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scrabble</title>
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="./css/scrabble-stylesheet.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/ui-lightness/jquery-ui.css">
+        <!--jQuery scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+          integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+          crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+      <div id="content-area">
+        <h1>SCRABBLE</h1>
+        <div id="scoreboard" class="center">
+          <h3 id="current-score" value='0'>Current Score = 0</h3>
+          <h3 id="word-score">Word Score = 0</h3>
+        </div>
+        <div id="board">
+          <div class="board-drop-zone" row="0" col="0" empty="1"></div>
+          <div class="board-drop-zone" row="0" col="1" empty="1"></div>
+          <div class="board-drop-zone" row="0" col="2" empty="1"></div>
+          <div class="board-drop-zone" row="0" col="3" empty="1"></div>
+          <div class="board-drop-zone" row="0" col="4" empty="1"></div>
+          <div class="board-drop-zone" row="0" col="5" empty="1"></div>
+          <div class="board-drop-zone" row="0" col="6" empty="1"></div>
+        </div>
+        <div id="tile-holder">
+          <div id="player-tile-zone">
+            <div class="tile"><img src="" alt=""></div>
+            <div class="tile"><img src="" alt=""></div>
+            <div class="tile"><img src="" alt=""></div>
+            <div class="tile"><img src="" alt=""></div>
+            <div class="tile"><img src="" alt=""></div>
+            <div class="tile"><img src="" alt=""></div>
+            <div class="tile"><img src="" alt=""></div>
+          </div>
+        </div>
+        <div id="submission-zone" class="center">
+          <button id="submit-word-btn" type="button">Submit Word</button>
+          <button id="restart-btn" type="button">Restart Game</button>
+        </div>
+      </div>
+      <!--Scripts -->
+      <script src="./js/scrabble.js"></script>
+      <script type="text/javascript" src="./resources/pieces.json"></script>
+    </body>
+
+
+</html>
